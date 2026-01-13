@@ -18,7 +18,22 @@
 }
 
 .bg-color{
-    background-color: #f1a957
+    background-color: #fbcd97ee;
+}
+
+.btn{
+    padding: 20px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff900e;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /*header styles*/
@@ -29,7 +44,8 @@
 }
 
 .brand{
-    padding: 30px 15px;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .nav-item{
@@ -38,18 +54,43 @@
 
 .nav-links{
     justify-self: space-around;
-    padding-right: 10px;
     align-items: center;
 }
 
 .nav-link{
     text-decoration: none;
     color: black;
+    font-size: 1.2rem;
     font-weight: 600;
-    padding: 10px 15px;
+    padding-right: 20px;
 }
 
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+
+/*banner styles*/
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.banner-img{
+    width: 100%;
+}
+
+
+/*responsive styles*/
+@media screen and (max-width: 576px){
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
 }
